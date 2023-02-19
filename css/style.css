@@ -143,3 +143,43 @@ button {
 .alert.visible {
   height: 32px;
 }
+
+#bars {
+  margin: 8px 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#bars div {
+  height: 6px;
+  border-radius: 3px;
+  transition: 0.4s;
+  width: 0%;
+}
+
+#bars.weak div {
+  background: #bc2b38;
+  width: 33.33%;
+}
+
+#bars.medium div {
+  background: #d36f30;
+  width: 66.66%;
+}
+
+#bars.strong div {
+  background: #1eb965;
+  width: 100%;
+}
+
+.strength {
+  text-align: left;
+  height: 30px;
+  text-transform: capitalize;
+  color: #f9f9f9;
+}
