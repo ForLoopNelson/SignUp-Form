@@ -33,7 +33,7 @@ const handleStartTyping = () => {
   spinner.classList.add("visible")
 }
 
-const handleChange = debounce((input) => {
+const handleChangeName = debounce((input) => {
   const { value } = input.target
 
   updateUi(value)
