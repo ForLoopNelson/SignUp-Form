@@ -41,7 +41,7 @@ const getStrength = (password) => {
   return getIndicator(password, strengthValue)
 }
 
-const handleChange = () => {
+const handleChangePw = () => {
   let { value: password } = passwordInput
 
   console.log(password)
