@@ -1,4 +1,4 @@
-const usernames = ["Cory", "cory", "coryN", "CoryN"]
+const usernames = ["Cory", "cory", "myName", "test", "user"]
 
 const spinner = document.getElementById("spinner"),
   alert = document.getElementById("alert")
