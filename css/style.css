@@ -17,8 +17,9 @@ body,
 }
 
 body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  /* place-items: center; */
+  justify-content: center;
   margin: 0;
   background-color: #000000;
   background-image: url("../bbblurry.svg");
@@ -124,7 +125,6 @@ p {
   transition: all 0.375s;
 }
 
-
 .username {
   position: relative;
 }
@@ -204,4 +204,52 @@ p {
   height: 30px;
   text-transform: capitalize;
   color: #f9f9f9;
+}
+
+/* Media Queries */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* @media screen and (max-width: 821px) {
+  body {
+    animation: none;
+  }
+  .login-card {
+    max-width: 800px;
+   
+  }
+}
+@media screen and (max-width: 693px) {
+  body {
+    animation: none;
+  }
+  .login-card {
+    max-width: 400px;
+    margin-right: 23%;
+  }
+}
+@media screen and (max-width: 395px) {
+  body {
+    animation: none;
+  }
+  .login-card {
+    max-width: 400px;
+    margin-left: 44px;
+  }
+} */
+
+@media screen and (max-width: 950px) {
+  body {
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    height: 95vh;
+  }
+}
+@media (orientation: landscape) and (max-width: 950px) {
+  .login-card {
+    height: 100vh;
+    overflow: auto;
+  }
 }
